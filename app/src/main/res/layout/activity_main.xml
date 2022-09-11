@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+xmlns:tools = "http://schemas.android.com/tools"
+android:layout_width = "match_parent"
+android:layout_height = "match_parent"
+android:padding = "16dp"
+tools:context = ".MainActivity" >
+<Button
+    android:id = "@+id/btnCreateNotification"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:layout_alignParentStart = "true"
+    android:layout_alignParentTop = "true"
+    android:layout_alignParentEnd = "true"
+    android:text = "Create Notification" />
+<ScrollView
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_below = "@+id/btnCreateNotification"
+    android:layout_alignStart = "@+id/btnCreateNotification"
+    android:layout_alignEnd = "@+id/btnCreateNotification"
+    android:layout_alignParentBottom = "true" >
+    <TextView
+        android:id = "@+id/textView"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "NotificationListenerService Example"
+        android:textAppearance = "?android:attr/textAppearanceMedium" />
+</ScrollView>
+</RelativeLayout>
